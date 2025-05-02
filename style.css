@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'C64ProMono';
+  src: url('fonts/C64ProMono.woff2') format('woff2'),
+      url('fonts/C64ProMono.woff') format('woff'),
+      url('fonts/C64ProMono.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    background-color: #000000;
+
+}
+
+#allstuff{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  margin-top: 10%;
+}
+
+#texto {
+    text-align: center;
+    font-family: 'C64ProMono';
+    font-style: normal;
+    color: white;
+}
+
+#npc {
+  image-rendering: pixelated;
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+  margin-left: 236px;
+  margin-bottom: 16px;
+}
+
+#dialog-box {
+  width: 600px;
+  min-height: 120px;
+  padding: 20px;
+  border: 8px solid white;
+  background-color: #000000;
+  font-size: 20px;
+  }
+  
+  #text {
+  padding-right: 40px;
+  font-family: 'C64ProMono';
+  font-style: normal;
+  color: white;
+  }
+  
