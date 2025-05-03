@@ -10,41 +10,63 @@
 
 body {
     background-color: #000000;
-
-}
-
-#allstuff{
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  align-items: center;
-  align-content: center;
-  margin-top: 10%;
-}
-
-#texto {
     text-align: center;
-    font-family: 'C64ProMono';
-    font-style: normal;
-    color: white;
 }
 
-#npc {
+
+img {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
   image-rendering: pixelated;
-  width: 128px;
-  height: 128px;
-  cursor: pointer;
-  margin-left: 236px;
-  margin-bottom: 16px;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
+
+#boombox{
+  z-index: 3;
+  height: 200px;
+  width: auto;
+  margin-left: 260px;
+}
+
+#npc{
+  z-index: 4;
+  height: 400px;
+  width: auto;
+  margin-top: -36px;
+}
+
+#mesa{
+  z-index: 2;
+}
+
+#fundo{
+  z-index: 1;
+  border: 4px solid white; /* Borda branca de 4px */
+  padding: 8px;
+}
+
 
 #dialog-box {
-  width: 600px;
-  min-height: 120px;
-  padding: 20px;
-  border: 8px solid white;
-  background-color: #000000;
-  font-size: 20px;
+  font-family: 'C64ProMono';
+  color: white;
+  position: absolute; /* importante para alinhar igual à imagem */
+  width: 800px;        /* mesma largura da imagem de fundo */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 10px 20px;
+  border: 4px solid white;
+  z-index: 999;
+  top: 520px; /* ajusta conforme a posição abaixo das imagens */
+  box-sizing: border-box; /* garante que a borda e padding não aumentem a largura */
   }
   
   #text {
@@ -53,4 +75,15 @@ body {
   font-style: normal;
   color: white;
   }
-  
+
+
+.botao-dialogo{
+  background: none;
+  border: none;
+  font-family: 'C64ProMono';
+  font-style: normal;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
